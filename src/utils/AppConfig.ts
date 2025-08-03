@@ -1,7 +1,7 @@
 export const AppConfig = {
-  site_name: 'Narosel',
-  title: 'Narosel',
+  site_name: 'YEAST GROUP',
+  title: 'YEAST GROUP',
   description:
-    'Narosel - Inteligentní řízení financí, procesů a stavebních projektů pod jednou střechou.',
+    'Moderní holding, který propojuje byznys myšlení s technologickou precizností pro efektivní správu vlastních aktiv i transformaci vašeho podnikání.', // <--- AKTUALIZOVANÝ POPIS PRO YEAST GROUP
   locale: 'en',
 };

@@ -24,10 +24,10 @@ const Meta = (props: IMetaProps) => {
           key="viewport"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#3B82F6" />
+        <meta name="theme-color" content="#2B2B2E" /> {/* Barva pro téma prohlížeče (primární barva Yeast Group) */}
         <meta
           name="keywords"
-          content="Narosel, účetnictví, daňová evidence, podnikání, podnikatelé, živnostníci, software, aplikace, webová aplikace"
+          content="Yeast Group, holding, investice, nemovitosti, provoz, technologie, automatizace, stavebnictví, venture, služby, správa portfolia, rodinný holding, expanze, inovace, strategie"
         />
         <link
           rel="apple-touch-icon"
@@ -55,9 +55,9 @@ const Meta = (props: IMetaProps) => {
         />
       </Head>
 
-      {/* Google Analytics */}
+      {/* Google Analytics - ZDE AKTUALIZUJTE ID, POKUD MÁ YEAST GROUP JINÉ ID GOOGLE ANALYTICS! */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-BZHWVQM54E"
+        src="https://www.googletagmanager.com/gtag/js?id=G-0MW6ZZHCY2" 
         strategy="afterInteractive"
       />
       <Script
@@ -68,7 +68,7 @@ const Meta = (props: IMetaProps) => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-BZHWVQM54E');
+            gtag('config', 'G-0MW6ZZHCY2'); 
           `,
         }}
       />
@@ -76,20 +76,20 @@ const Meta = (props: IMetaProps) => {
       <NextSeo
         title={props.title}
         description={props.description}
-        canonical={props.canonical || 'https://www.narosel.cz'}
+        canonical={props.canonical || 'https://www.yeast-group.cz'}
         openGraph={{
           title: props.title,
           description: props.description,
-          url: props.canonical || 'https://www.narosel.cz',
+          url: props.canonical || 'https://www.yeast-group.cz',
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
           type: 'website',
           images: [
             {
-              url: 'https://www.yeastlabs.dev/og-image.png',
+              url: `${router.basePath}/og-image.png`, // Předpoklad, že Open Graph obrázek bude ve složce public
               width: 1200,
               height: 630,
-              alt: 'Narosel',
+              alt: 'YEAST GROUP',
             },
           ],
         }}
